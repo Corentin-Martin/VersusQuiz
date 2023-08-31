@@ -153,31 +153,31 @@ function Answer() {
         {choice === 'duo' && (
         <div className="Answer-form-duo">
             {question.duo_options.map((option) => (
-              <label className="Answer-form-duo-label" htmlFor={option}>
-                <input
-                  className="Answer-form-duo-input"
-                  key={option}
-                  id={option}
-                  type="radio"
-                  value={option}
-                  checked={radioValue === option}
-                  onChange={(e) => {
-                    setRadioValue(e.currentTarget.value);
-                    setAnswer(option);
-                  }}
-                />
-                {option}
-              </label>
+              <div className="Answer-form-duo-box" key={option}><input
+                className="Answer-form-duo-input"
+                key={option}
+                id={option}
+                type="radio"
+                value={option}
+                checked={radioValue === option}
+                onChange={(e) => {
+                  setRadioValue(e.currentTarget.value);
+                  setAnswer(option);
+                }}
+              />
+                <label className="Answer-form-duo-label" htmlFor={option}>
+                  {option}
+                </label>
+              </div>
             ))}
         </div>
         )}
         {choice === 'square' && (
           <div className="Answer-form-square">
             {question.square_options.map((option) => (
-              <label htmlFor={option} className="Answer-form-square-label">
+              <div className="Answer-form-square-box" key={option}>
                 <input
                   className="Answer-form-square-input"
-                  key={option}
                   id={option}
                   type="radio"
                   value={option}
@@ -187,8 +187,10 @@ function Answer() {
                     setAnswer(option);
                   }}
                 />
-                {option}
-              </label>
+                <label htmlFor={option} className="Answer-form-square-label">
+                  {option}
+                </label>
+              </div>
             ))}
           </div>
         )}

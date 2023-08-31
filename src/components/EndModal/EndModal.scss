@@ -18,9 +18,21 @@
     font-weight: bold;
     font-style: italic;
     font-size: 1.5rem;
+    margin-bottom: .5rem;
   }
 
   &-text {
     font-style: italic;
+    margin-bottom: .3rem;
+  }
+
+  &-button {
+    background-color: vars.$color2;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    padding: .2rem;
+    width: 75%;
+    margin-top: .6rem;
   }
 }

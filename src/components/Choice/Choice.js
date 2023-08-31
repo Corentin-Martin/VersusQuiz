@@ -55,16 +55,16 @@ function Choice() {
           text={duoOptions}
           lang="fr"
           startBtn={duoButton}
-          pitch={6}
-          rate={6}
+          pitch={5}
+          rate={5}
         />
         <Speech
           style={{ width: '100%' }}
           text={squareOptions}
           lang="fr"
           startBtn={squareButton}
-          pitch={6}
-          rate={6}
+          pitch={5}
+          rate={5}
         />
 
         <button

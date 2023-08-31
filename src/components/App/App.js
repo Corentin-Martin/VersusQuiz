@@ -36,11 +36,14 @@ function App() {
               {showModal && <Modal />}
               {endGame && <EndModal />}
               <Header />
-              <PlayerTurn />
-              {!ready && <Question />}
-              {ready && <QuestionReady />}
-              <Choice />
-              {ready && <Answer />}
+              {!endGame && (
+              <><PlayerTurn />
+                {!ready && <Question />}
+                {ready && <QuestionReady />}
+                <Choice />
+                {ready && <Answer />}
+              </>
+              )}
 
             </>
 )}

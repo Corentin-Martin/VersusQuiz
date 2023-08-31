@@ -25,6 +25,7 @@
     font-weight: bold;
     font-style: italic;
     height: 100%;
+    width: 90%;
 
     &-button{
       background-color: vars.$color3;
@@ -44,37 +45,69 @@
     }
 
     &-duo {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+
       &-input{
-        display: none;
+        appearance: none;
+      }
+
+      &-box{
+        width: 50%;
+        
       }
 
       &-label{
         background-color: vars.$color1;
         box-shadow: .2em .2em .2em black;
-        min-width: 10rem;
+        display: block;
         margin: 0.2rem;
         padding: .5rem;
+        cursor: pointer;
       }
 
-      &-label:hover, &-input:checked{
+      &-label:hover {
+        background-color: vars.$color2;
+      }
+
+       &-input:checked ~ &-label{
         background-color: vars.$color2;
       }
     }
 
     &-square {
+      display: flex;
+      width: 100%;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      
       &-input{
-        display: none;
+        appearance: none;
+      }
+
+      &-box{
+        width: 50%;
+        
       }
 
       &-label{
         background-color: vars.$color2;
         box-shadow: .2em .2em .2em black;
-        min-width: 10rem;
+        display: block;
         margin: 0.2rem;
         padding: .5rem;
+        cursor: pointer;
       }
 
       &-label:hover{
+        background-color: vars.$color3;
+      }
+
+      &-input:checked ~ &-label{
         background-color: vars.$color3;
       }
     }

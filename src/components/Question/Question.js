@@ -9,6 +9,7 @@ function Question() {
   const questionOnGame = useSelector((state) => state.questionOnGame);
   const question = useSelector((state) => state.questions[questionOnGame]);
   const turn = useSelector((state) => state.turn);
+  const showModal = useSelector((state) => state.showModal);
 
   const dispatch = useDispatch();
 
@@ -30,10 +31,13 @@ function Question() {
 
   return (
     <div className="Question">
+      {!showModal && (
+      <>
+        <p className="Question-text">Prêt à jouer ?</p>
 
-      <p className="Question-text">Prêt à jouer ?</p>
-
-      <Speech style={{ width: '60%' }} text={question.question} lang="fr" startBtn={startBtn} pitch={6} rate={6} />
+        <Speech style={{ width: '60%' }} text={question.question} lang="fr" startBtn={startBtn} pitch={5} rate={5} />
+      </>
+      )}
 
     </div>
   );

@@ -16,7 +16,7 @@ function EndModal() {
 
   return (
 
-    <div className="EndModal-box">
+    <div className="EndModal">
       <div className="EndModal-head">Fin de la partie !</div>
       {scorePlayerOne > scorePlayerTwo
         ? <p className="EndModal-text">Félicitations à {playerOne}, vainqueur avec {scorePlayerOne} point{scorePlayerOne > 1 ? 's' : ''} !</p>
