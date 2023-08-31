@@ -2,7 +2,6 @@
 
 .Question {
   margin-bottom: .5rem;
-  height: 30vh;
   width: 100%;
   text-align: center;
   display: flex;
@@ -32,6 +31,7 @@
 }
   &-text {
     font-size: 2rem;
+    margin-top: 5rem;
   }
 
 }

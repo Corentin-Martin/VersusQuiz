@@ -2,7 +2,6 @@
 @import url(https://fonts.bunny.net/css?family=allan:400,700);
 
 .Header {
-  height: 28vh;
   padding: 0.5rem;
   width: 90%;
   text-align: center;
@@ -14,6 +13,7 @@
     font-family: 'Allan', display;
     font-weight: 700;
     font-size: 5.5rem;
+    margin-top: .2rem;
     margin-bottom: 1rem;
     color: vars.$color1;
     text-shadow: 5px 5px 5px black;
