@@ -1,0 +1,27 @@
+@use 'src/styles/vars';
+
+.Question {
+  margin-bottom: .5rem;
+  height: 30vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-button {
+    background-color: vars.$color1;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    border-radius: 25%;
+    font-size: 2rem;
+    width: 100%;
+  }
+
+  &-text {
+    font-size: 2rem;
+  }
+
+}

@@ -1,0 +1,71 @@
+@use 'src/styles/vars';
+
+.Header {
+  height: 28vh;
+  padding: 0.5rem;
+  width: 90%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+
+  &-h1 {
+    font-weight: bold;
+    font-size: 3rem;
+    color: vars.$color1;
+    text-shadow: .2em .2em .2em vars.$color2;
+  }
+
+  &-col {
+  background-color: vars.$color3;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 .5rem;
+  width: 100%;
+  box-shadow: 5px 5px 5px black;
+  }
+
+  &-players {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+  }
+
+  &-points {
+    color: white;
+    text-shadow: 1px 2px 2px black;
+    font-size: 1.3rem;
+    margin-bottom: .5rem;
+  }
+
+  &-pseudo {
+  font-weight: bold;
+  font-style: italic;
+  color: vars.$color2;
+  text-shadow: 2px 3px 2px  white;
+  margin-bottom: .5rem;
+}
+
+  &-time {
+  background-color: red;
+  box-shadow: 3px 3px white;
+  border-radius: 5%;
+  padding: .3rem;
+  margin-bottom: .5rem;
+
+  &-count {
+    font-weight: bold;
+    font-style: italic;
+  }
+
+   }
+}
+
+@media screen and (min-width: 768px) {
+  .Header-time {
+    padding: .3rem 5rem;
+  }
+}

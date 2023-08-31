@@ -1,0 +1,26 @@
+@use 'src/styles/vars';
+
+.EndModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 75%;
+  z-index: 1;
+  text-align: center;
+  vertical-align: middle;
+  padding: 2rem;
+  border-radius: 3em;
+  box-shadow: 5px 5px 5px black;
+  background-color: vars.$color1;
+
+  &-head {
+    font-weight: bold;
+    font-style: italic;
+    font-size: 1.5rem;
+  }
+
+  &-text {
+    font-style: italic;
+  }
+}

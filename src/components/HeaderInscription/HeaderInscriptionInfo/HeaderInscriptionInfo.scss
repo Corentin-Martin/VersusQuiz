@@ -1,0 +1,31 @@
+@use 'src/styles/vars';
+
+.HeaderInscriptionInfo {
+  text-align: center;
+  box-shadow: .5em .2em .2em black;
+  background-color: vars.$color4;
+  color: vars.$color1;
+  width: 80%;
+  line-height: normal;
+  border-radius: 5px 50px / 60px;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  animation: 6s apparition;
+
+  &-h3 {
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: .4rem;
+  }
+
+  &-text {
+    margin-bottom: .3rem;
+  }
+}
+
+@keyframes apparition {
+  from { 
+          transform: scaleX(0); }
+  to   { transform: scaleX(1); }
+}

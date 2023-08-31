@@ -1,0 +1,14 @@
+@use 'src/styles/vars';
+
+.App{
+  position: relative;
+  padding: 0;
+  background-color: vars.$color5;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+

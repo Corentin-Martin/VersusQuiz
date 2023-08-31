@@ -1,0 +1,30 @@
+@use 'src/styles/vars';
+
+.PlayerTurn {
+  margin: .5rem auto;
+  height: 10vh;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  &-badge {
+    background-color: vars.$color2;
+    width: 50%;
+    padding: .5rem;
+    color: vars.$color4;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 2px 3px black;
+    box-shadow: 4px 5px white;
+    border-radius: 5%;
+  }
+
+  &-intro {
+    margin: 0;
+    vertical-align: middle;
+    
+  }
+}

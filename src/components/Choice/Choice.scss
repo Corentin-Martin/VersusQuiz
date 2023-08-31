@@ -1,0 +1,36 @@
+@use 'src/styles/vars';
+
+.Choice {
+  height: 17vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 90%;
+
+  &--d-none {
+    display: none;
+  }
+
+  &-button {
+
+    width: 100%;
+    color: white;
+    font-size: 1.5rem;
+    font-style: italic;
+    margin-bottom: .4rem;
+
+    &-duo {
+      background-color: vars.$color1;
+    }
+
+    &-square {
+      background-color: vars.$color2;
+    }
+
+    &-cash {
+      background-color: vars.$color3;
+    }
+  }
+}
