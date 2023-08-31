@@ -33,7 +33,7 @@ function Question() {
     <div className="Question">
       {!showModal && (
       <>
-        <p className="Question-text">Prêt à jouer ?</p>
+        <p className="Question-text">Prêt(e) à jouer ?</p>
 
         <Speech style={{ width: '60%' }} text={question.question} lang="fr" startBtn={startBtn} pitch={5} rate={5} />
       </>

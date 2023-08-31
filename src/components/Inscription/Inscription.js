@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { useNavigate } from 'react-router-dom';
 import {
+  setChoice,
   setCountdownPlayerOne, setCountdownPlayerTwo, setEndGame,
   setPlayers, setReady, setTurn, updateScorePlayerOne, updateScorePlayerTwo,
 } from '../../actions/actions';
@@ -25,8 +26,8 @@ function Inscription() {
     else {
       dispatch(setPlayers(playerOne.replace(/([-'`~!@#$§%^&*(){}_|+=?;:'",.<>\\[\]\\/0-9])/gi, ''), playerTwo.replace(/([-'`~!@#$§%^&*(){}_|+=?;:'",.<>\\[\]\\/0-9])/gi, '')));
       dispatch(setEndGame(false));
-      dispatch(setCountdownPlayerOne(45));
-      dispatch(setCountdownPlayerTwo(45));
+      dispatch(setCountdownPlayerOne(60));
+      dispatch(setCountdownPlayerTwo(60));
       dispatch(updateScorePlayerOne(0));
       dispatch(updateScorePlayerTwo(0));
       dispatch(setReady(false));
@@ -34,6 +35,7 @@ function Inscription() {
       setPlayerTwo('');
       navigate('/game');
       dispatch(setTurn(1));
+      dispatch(setChoice(''));
     }
   };
 

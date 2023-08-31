@@ -11,15 +11,25 @@
   align-items: center;
 
   &-button {
-    background-color: vars.$color1;
-    font-weight: bold;
-    font-style: italic;
-    color: white;
-    border-radius: 25%;
-    font-size: 2rem;
-    width: 100%;
-  }
+    margin-top: 1rem;
+    color: vars.$color5;
+    padding: 0.7em 1.7em;
+    font-size: 18px;
+    border-radius: 0.5em;
+    background: vars.$color2;
+    border: 1px solid vars.$color2;
+    transition: all .3s;
+    box-shadow: 6px 6px 12px vars.$color3,
+                -6px -6px 12px vars.$color2;
+   }
+  
 
+
+&-button:hover, &-button:active {
+ color: black;
+ box-shadow: inset 4px 4px 12px vars.$color1,
+             inset -4px -4px 12px vars.$color2;
+}
   &-text {
     font-size: 2rem;
   }

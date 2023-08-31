@@ -1,4 +1,5 @@
 @use 'src/styles/vars';
+@import url(https://fonts.bunny.net/css?family=allan:400,700);
 
 .Header {
   height: 28vh;
@@ -10,14 +11,19 @@
   justify-content: space-around;
 
   &-h1 {
-    font-weight: bold;
-    font-size: 3rem;
+    font-family: 'Allan', display;
+    font-weight: 700;
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
     color: vars.$color1;
-    text-shadow: .2em .2em .2em vars.$color2;
+    text-shadow: 5px 5px 5px black;
   }
 
   &-col {
-  background-color: vars.$color3;
+  background: vars.$color3;
+  border-radius: 20px;
+  box-shadow:  10px 10px 32px #48a67a,
+               -10px -10px 32px #6af4b4;
   padding: 0.7rem;
   display: flex;
   flex-direction: column;
@@ -25,7 +31,6 @@
   align-items: center;
   margin: 0 .5rem;
   width: 100%;
-  box-shadow: 5px 5px 5px black;
   }
 
   &-players {
@@ -47,17 +52,19 @@
   color: vars.$color2;
   text-shadow: 2px 3px 2px  white;
   margin-bottom: .5rem;
+  font-size: 2rem;
 }
 
   &-time {
-  background-color: red;
-  box-shadow: 3px 3px white;
-  border-radius: 5%;
+  background-color: #ff6961;
+  box-shadow: 5px 5px 5px red;
+  border-radius: 5px;
   padding: .3rem;
   margin-bottom: .5rem;
 
   &-count {
     font-weight: bold;
+    text-shadow: 1px 1px 1px white;
     font-style: italic;
   }
 

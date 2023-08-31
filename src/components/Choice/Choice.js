@@ -68,7 +68,7 @@ function Choice() {
         />
 
         <button
-          style={{ width: '100%' }}
+          style={{ width: '85%' }}
           type="button"
           className="Choice-button Choice-button-cash"
           onClick={() => {

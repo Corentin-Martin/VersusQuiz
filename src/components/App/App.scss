@@ -1,9 +1,10 @@
 @use 'src/styles/vars';
 
+
 .App{
   position: relative;
   padding: 0;
-  background-color: vars.$color5;
+  background-color: vars.$color3;
   height: 100dvh;
   width: 100%;
   display: flex;

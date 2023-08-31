@@ -1,7 +1,8 @@
 @use 'src/styles/vars';
+@import url(https://fonts.bunny.net/css?family=allan:400,700);
 
 .HeaderInscription {
-  width: 100vw; 
+  width: 90%; 
   height: 47vh; 
   margin-top: 3vh;
   line-height: 100px; 
@@ -13,11 +14,13 @@
   align-items: center;
 
   &-h1 {
-    font-weight: bold;
-    font-size: 3rem;
     color: vars.$color1;
-    text-shadow: .2em .2em .2em vars.$color2;
+    text-shadow: 5px 5px 5px black;
     animation: 3s slidein;
+    font-family: 'Allan', display;
+    font-weight: 700;
+    font-size: 5.5rem;
+    margin-bottom: 1rem;
   }
 
 }

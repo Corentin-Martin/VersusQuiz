@@ -6,12 +6,18 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 75%;
+  height: 40%;
   z-index: 1;
   text-align: center;
   vertical-align: middle;
   padding: 2rem;
-  border-radius: 3em;
-  box-shadow: 5px 5px 5px black;
+  border-radius: 5px;
+  box-shadow: 5px 5px 5px black,
+  -5px -5px 5px black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   &-true{
     background-color: vars.$color3;
@@ -32,6 +38,10 @@
     font-weight: bold;
     font-style: italic;
     font-size: 1.5rem;
+  }
+
+  &-text{
+    margin-top: 1rem;
   }
 
 }

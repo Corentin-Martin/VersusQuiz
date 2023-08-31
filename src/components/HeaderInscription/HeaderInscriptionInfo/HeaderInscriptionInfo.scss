@@ -3,15 +3,17 @@
 .HeaderInscriptionInfo {
   text-align: center;
   box-shadow: .5em .2em .2em black;
-  background-color: vars.$color4;
   color: vars.$color1;
   width: 80%;
   line-height: normal;
-  border-radius: 5px 50px / 60px;
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  animation: 6s apparition;
+  border-radius: 50px;
+  background: #83ee99;
+  box-shadow:  20px 20px 60px black,
+             -5px -5px 30px vars.$color4;
+  margin-bottom: 3rem;
 
   &-h3 {
     font-weight: bold;
@@ -20,12 +22,6 @@
   }
 
   &-text {
-    margin-bottom: .3rem;
+    margin-bottom: 1rem;
   }
-}
-
-@keyframes apparition {
-  from { 
-          transform: scaleX(0); }
-  to   { transform: scaleX(1); }
 }
