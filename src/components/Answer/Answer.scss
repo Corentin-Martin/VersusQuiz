@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: .5rem;
+  margin-top: .2rem;
 
   &-alert {
     color: red;
@@ -28,7 +28,7 @@
     width: 90%;
 
     &-button {
-      margin: 1.5rem 0;
+      margin: 1rem 0;
       color: vars.$color5;
       padding: .3rem;
       width: 65%;
@@ -95,6 +95,7 @@
       width: 100%;
       flex-wrap: wrap;
       justify-content: space-between;
+      row-gap: 0;
       align-items: center;
       
       &-input{
@@ -103,6 +104,9 @@
 
       &-box{
         width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         
       }
 
@@ -114,6 +118,7 @@
         margin: 0.2rem;
         padding: .5rem;
         cursor: pointer;
+        min-width: 85%;
       }
 
       &-label:hover{

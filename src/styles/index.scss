@@ -4,6 +4,18 @@
 
 body {
   font-family: 'Asap Condensed', sans-serif;
+  height: 100dvh;
+  background-color: vars.$color3;
+}
+
+input[type='text']{
+  font-size: 16px;
+}
+
+#root {
+  height: 100%;
+  display: flex;
+  align-items: flex-start;
 }
 
 /* 
