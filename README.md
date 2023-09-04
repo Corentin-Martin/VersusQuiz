@@ -9,4 +9,6 @@ A chaque question, il peut choisir de répondre cash (et tenter de marquer 5 poi
 
 Lorsqu'un joueur voit son temps écoulé, le deuxième peut continuer de jouer tant qu'il lui reste du temps pour tenter de dépasser son concurrent ou d'augmenter son avance.
 
+Disponible [ici](http://versus-quiz.surge.sh)
+
 React, Redux, CSS
